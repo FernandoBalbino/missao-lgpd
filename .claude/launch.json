@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["-e", "require('http').createServer((q,r)=>require('fs').readFile('index.html',(e,d)=>{r.setHeader('content-type','text/html; charset=utf-8');r.end(d)})).listen(5173)"],
+      "port": 5173
+    }
+  ]
+}
